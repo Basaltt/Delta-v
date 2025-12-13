@@ -1,0 +1,23 @@
+- type: gameMap
+  id: Empty
+  mapName: 'Empty'
+  mapPath: /Maps/empty.yml
+  minPlayers: 30
+  maxPlayers: 100
+  stations:
+    Basilisk:
+      stationProto: StandardNanotrasenStation
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: '{0}Empty{1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: 'NY'
+        - type: StationEmergencyShuttle
+          emergencyShuttlePath: /Maps/_DV/Shuttles/NTES_UCLB.yml
+        - type: StationCargoShuttle
+          path: /Maps/_DV/Shuttles/NTCS_Duster.yml
+        - type: StationJobs
+          availableJobs:
+          #civilian
+            Passenger: [ -1, -1 ]
