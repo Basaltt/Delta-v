@@ -5,3 +5,11 @@
   components:
   - type: BorgSwitchableType
     selectedBorgType: security
+
+- type: entity
+  id: MechanizedBorgChassisProtector
+  parent: MechanizedBorgChassisSelectable
+  name: protector cyborg
+  components:
+  - type: BorgSwitchableType
+    selectedBorgType: protector

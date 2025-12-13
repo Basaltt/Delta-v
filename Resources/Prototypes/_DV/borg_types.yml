@@ -71,3 +71,79 @@
   # Pet
   petSuccessString: petting-success-security-cyborg
   petFailureString: petting-failure-security-cyborg
+
+
+# Protector borg
+- type: borgType
+  id: protector
+
+  # Description
+  dummyPrototype: MechanizedBorgChassisProtector
+
+  # Functional
+  extraModuleCount: 2
+  moduleWhitelist:
+    tags:
+    - BorgModuleGeneric
+    - BorgModuleSecurity
+
+  # TODO: change these when reworking secborg modules to have the equivalent of roundstart gear
+  defaultModules:
+  - BorgModuleSecurityDeescalate
+  - BorgModuleSecurityPatrol
+
+  lawset: SiliconProtector
+  job: SecurityOfficer
+
+  addComponents:
+  - type: FlashImmunity
+  - type: ShowMindShieldIcons
+  - type: ShowCriminalRecordIcons
+  - type: MobThresholds
+    thresholds: #these values are pulled out of my ass
+      0: Alive
+      800: Critical # -200 to Crit Threshold
+      1000: Dead
+    stateAlertDict:
+      Alive: BorgHealth
+      Critical: BorgCrit
+      Dead: BorgDead
+    showOverlays: false
+    allowRevives: true
+  - type: Fiber # red plasteel fibers
+    fiberMaterial: fibers-plasteel
+    fiberColor: fibers-red
+  - type: AccessReader
+    access: [["Command"], ["Robotics"], ["Security"]]
+
+  radioChannels:
+  - Science
+  - Security
+  - Command
+
+  # Visual
+  clientComponents:
+  - type: Sprite
+    noRot: true
+    drawdepth: Mobs
+    sprite: _DV/Mobs/Silicon/chassis.rsi
+    layers:
+    - state: security
+      map: ["enum.BorgVisualLayers.Body", "movement"]
+    - state: security_e_r
+      map: ["enum.BorgVisualLayers.Light"]
+      shader: unshaded
+      visible: false
+    - state: security_l
+      shader: unshaded
+      map: ["light","enum.BorgVisualLayers.LightStatus"]
+      visible: false
+  inventoryTemplateId: borgShort
+  spriteBodyState: security
+  spriteHasMindState: security_e
+  spriteNoMindState: security_e_r
+  spriteToggleLightState: security_l
+
+  # Pet
+  petSuccessString: petting-success-protector-cyborg
+  petFailureString: petting-failure-protector-cyborg
