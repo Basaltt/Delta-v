@@ -98,6 +98,8 @@ construction-graph-tag-honk-peripherals-control-module = H.O.N.K. peripherals co
 construction-graph-tag-honk-weapon-control-and-targeting-module = H.O.N.K. weapon control and targeting module
 construction-graph-tag-ripley-central-control-module = ripley central control module
 construction-graph-tag-ripley-peripherals-control-module = ripley peripherals control module
+construction-graph-tag-mechanized-central-control-module = mechanized central control module
+construction-graph-tag-mechanized-peripherals-control-module = mechanized peripherals control module
 
 # structures
 construction-graph-tag-door-electronics-circuit-board = door electronics circuit board

@@ -164,3 +164,23 @@
   recipeUnlocks:
   - PyroLeftArm
   - ZapLeftArm
+
+- type: technology
+  id: MechanizedCyborgs
+  name: research-technology-mechanized-cyborgs
+  icon:
+    sprite: _DV/Objects/Weapons/Guns/Battery/immolator.rsi
+    state: icon
+  discipline: Arsenal
+  tier: 3
+  cost: 15000
+  recipeUnlocks: #wheres the entities defined??
+  - MechanizedCentralElectronics
+  - MechanizedPeripheralsElectronics
+  - MechanizedCyborgEndoskeleton
+  - MechanizedLeftArmBorg
+  - MechanizedLeftLegBorg
+  - MechanizedRightArmBorg
+  - MechanizedRightLegBorg
+  #- MechanizedHeadBorg
+  #- MechanizedTorsoBorg

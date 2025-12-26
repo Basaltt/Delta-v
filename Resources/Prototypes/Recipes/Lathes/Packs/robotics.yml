@@ -63,6 +63,17 @@
   - VimHarness
 
 - type: latheRecipePack
+  id: MechanizedCyborgsLimbs
+  recipes:
+   - MechanizedCyborgEndoskeleton
+   - MechanizedLeftArmBorg
+   - MechanizedLeftLegBorg
+   - MechanizedRightArmBorg
+   - MechanizedRightLegBorg
+   - MechanizedTorsoBorg
+   - MechanizedHeadBorg
+
+- type: latheRecipePack
   id: MechEquipment
   recipes:
     - MechEquipmentGrabber

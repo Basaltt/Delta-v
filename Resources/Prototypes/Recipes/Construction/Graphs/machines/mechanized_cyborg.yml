@@ -1,0 +1,102 @@
+- type: constructionGraph
+  id: MechanizedCyborg
+  start: start
+  graph:
+  - node: start
+    entity: MechanizedCyborgEndoskeleton
+    edges:
+    - to: Mechanized Cyborg
+      steps:
+      - assemblyId: generic
+        guideString: borg-construction-guide-string
+
+      - tool: Anchoring
+        doAfter: 1
+
+      - tool: Prying
+        doAfter: 1
+
+      - material: Cable
+        doAfter: 1
+        amount: 15
+        store: part-container
+
+      - tool: Cutting
+        doAfter: 1
+
+      - tag: MechanizedCentralControlModule
+        name: construction-graph-tag-mechanized-central-control-module
+        store: part-container
+
+      - tool: Screwing
+        doAfter: 1
+
+      - tag: MechanizedPeripheralsControlModule
+        name: construction-graph-tag-mechanized-peripherals-control-module
+        store: part-container
+
+      - tool: Screwing
+        doAfter: 1
+
+      - material: Steel
+        amount: 15
+        store: part-container
+
+      - tool: Anchoring
+        doAfter: 1
+
+      - tool: Welding
+        doAfter: 1
+
+      - component: ApcElectronics
+        name: construction-graph-component-apc-electronics
+        icon:
+          sprite: "Objects/Misc/module.rsi"
+          state: "charger_APC"
+
+      - component: PowerCell
+        name: construction-graph-component-power-cell
+        store: battery-container
+        icon:
+          sprite: Objects/Power/power_cells.rsi
+          state: small
+
+      - tool: Anchoring
+        doAfter: 1
+
+      - component: Flash
+        name: construction-graph-component-flash
+        store: part-container
+        icon:
+          sprite: Objects/Weapons/Melee/flash.rsi
+          state: flash
+
+      - component: Flash
+        name: construction-graph-component-second-flash
+        store: part-container
+        icon:
+          sprite: Objects/Weapons/Melee/flash.rsi
+          state: flash
+
+      - tool: Screwing
+        doAfter: 1
+
+      - material: ReinforcedUraniumGlass
+        amount: 10
+        store: part-container
+
+      - tool: Welding
+        doAfter: 1
+
+      - material: Plasteel
+        amount: 15
+        store: part-container
+
+      - tool: Welding
+        doAfter: 1
+
+      - tool: Anchoring
+        doAfter: 1
+
+  - node: Mechanized Cyborg
+    entity: MechanizedBorgChassisSelectable

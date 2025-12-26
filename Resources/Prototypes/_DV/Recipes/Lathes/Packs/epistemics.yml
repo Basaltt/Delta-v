@@ -10,3 +10,9 @@
   recipes:
   - ReverseEngineeringMachineCircuitboard
   - ArtifactDisplayCaseMachineCircuitBoard
+
+- type: latheRecipePack
+  id: MechanizedBoards
+  recipes:
+  - MechanizedCentralElectronics
+  - MechanizedPeripheralsElectronics

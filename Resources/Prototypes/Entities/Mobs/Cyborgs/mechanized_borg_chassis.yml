@@ -4,7 +4,7 @@
   parent: [BaseMob, StripableInventoryBase]
   id: MechanizedBorgChassisNotIonStormable
   name: mechanized cyborg
-  description: A mechanized man-machine hybrid that assists in station activity. Big and stronk. They love being asked to state their laws over and over.
+  description: A mechanized man-machine hybrid that assists in station activity. Big and stronk. This thing means business.
   save: false
   abstract: true
   components:
@@ -317,9 +317,9 @@
   - type: Explosive
     explosionType: Minibomb
     deleteAfterExplosion: false # let damage threshold gib the borg
-    totalIntensity: 50 #was 30
-    intensitySlope: 20
-    maxIntensity: 40 #was 20
+    totalIntensity: 200 #was 30
+    intensitySlope: 100
+    maxIntensity: 190 #was 20
     canCreateVacuum: false # its for killing the borg not the station
 
 
@@ -476,7 +476,7 @@
   parent: MechanizedBorgChassisNotIonStormable
   id: MechanizedXenoborgChassis
   name: mechanizedxenoborg
-  description: A mechanized man-machine hybrid that aims to replicate itself. Big and stronk. They love extracting brains to insert into fresh Xenoborg chassis to grow their army.
+  description: A mechanized man-machine hybrid that aims to replicate itself. Big and stronk. They love extracting brains to insert into fresh Xenoborg chassis to grow their army. This thing means business.
   save: false
   abstract: true
   components:

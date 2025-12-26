@@ -294,6 +294,7 @@
     - MechBoards
     - ShuttleBoards
     - EngineeringBoardsGoob #Goob Factorio port
+    #- MechanizedCyborgsBoards # DeltaV
   - type: EmagLatheRecipes
     emagDynamicPacks:
     - SecurityBoards
@@ -357,6 +358,7 @@
     - Surgery # DeltaV - Share Surgery Parts between Epi and Med.
     - CyberneticsRobotics # DeltaV - Share Surgery Parts between Epi and Med.
     - PsionicProsthetics # DeltaV
+    - MechanizedCyborgsLimbs # DeltaV
   - type: EmagLatheRecipes # DeltaV
     emagStaticPacks:
     - RoboticsEmagStatic
@@ -469,6 +471,7 @@
     - SpecOpsGoogles # DeltaV
     #- SecurityDisablers # DeltaV - made roundstart
     - AdvancedPsionicProsthetics # DeltaV
+    #- MechanizedCyborgsModules # DeltaV
   - type: MaterialStorage
     whitelist:
       tags:

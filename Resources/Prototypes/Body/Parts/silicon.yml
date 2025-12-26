@@ -122,3 +122,106 @@
     - BorgTorso
   - type: Item
     heldPrefix: borg-chest
+
+
+#Everything below is for Mechanized Cyborgs. Its kinda just copy pasted from the above entries with changed ID names
+- type: entity
+  parent: [ PartSiliconBase, BaseLeftArm ]
+  id: MechanizedLeftArmBorg
+  name: mechanized cyborg left arm
+  components:
+  - type: Sprite
+    state: borg_l_arm
+  - type: Icon
+    state: borg_l_arm
+  - type: Tag
+    tags:
+    - Trash
+    - MechanizedBorgArm
+    - MechanizedLeftArmBorg
+  - type: Item
+    heldPrefix: mechanized-borg-arm
+
+- type: entity
+  parent: [ PartSiliconBase, BaseRightArm ]
+  id: MechanizedRightArmBorg
+  name: mechanized cyborg right arm
+  components:
+  - type: Sprite
+    state: borg_r_arm
+  - type: Icon
+    state: borg_r_arm
+  - type: Tag
+    tags:
+    - Trash
+    - MechanizedBorgArm
+    - MechanizedRightArmBorg
+  - type: Item
+    heldPrefix: mechanized-borg-arm
+
+- type: entity
+  parent: [ PartSiliconBase, BaseLeftLeg ]
+  id: MechanizedLeftLegBorg
+  name: mechanized cyborg left leg
+  components:
+  - type: Sprite
+    state: borg_l_leg
+  - type: Icon
+    state: borg_l_leg
+  - type: Tag
+    tags:
+    - Trash
+    - MechanizedBorgLeg
+    - MechanizedLeftLegBorg
+  - type: Item
+    heldPrefix: mechanized-borg-leg
+
+- type: entity
+  parent: [ PartSiliconBase, BaseRightLeg ]
+  id: MechanizedRightLegBorg
+  name: mechanized cyborg right leg
+  components:
+  - type: Sprite
+    state: borg_r_leg
+  - type: Icon
+    state: borg_r_leg
+  - type: Tag
+    tags:
+    - Trash
+    - MechanizedBorgLeg
+    - MechanizedRightLegBorg
+  - type: Item
+    heldPrefix: mechanized-borg-leg
+
+- type: entity
+  parent: [ PartSiliconBase, BaseHead ]
+  id: MechanizedHeadBorg
+  name: mechanized cyborg head
+  components:
+  - type: Sprite
+    state: borg_head
+  - type: Icon
+    state: borg_head
+  - type: Tag
+    tags:
+    - Trash
+    - MechanizedHeadBorg
+  - type: Item
+    heldPrefix: mechanized-borg-head
+
+- type: entity
+  parent: [ PartSiliconBase, BaseTorsoInorganic ]
+  id: MechanizedTorsoBorg
+  name: mechanized cyborg torso
+  components:
+  - type: Sprite
+    state: borg_chest
+  - type: Icon
+    state: borg_chest
+  - type: Tag
+    tags:
+    - Trash
+    - MechanizedTorsoBorg
+  - type: Item
+    heldPrefix: mechanized-borg-chest
+

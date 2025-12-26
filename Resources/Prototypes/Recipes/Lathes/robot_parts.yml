@@ -18,6 +18,15 @@
 
 - type: latheRecipe
   abstract: true
+  parent: BaseRoboticsRecipe
+  id: MechanizedBorgLimbRecipe
+  completetime: 5
+  materials:
+    Steel: 1000
+    Uranium: 200
+
+- type: latheRecipe
+  abstract: true
   id: BaseRoboticsPartRecipe
   categories:
   - Parts
@@ -80,6 +89,47 @@
   parent: BaseBorgLimbRecipe
   id: TorsoBorg
   result: TorsoBorg
+
+# Mechanized Cyborg body
+- type: latheRecipe
+  parent: BaseRoboticsRecipe
+  id: MechanizedCyborgEndoskeleton
+  result: MechanizedCyborgEndoskeleton
+  materials:
+    Plasteel: 1500
+    Steel: 1500
+    Uranium: 800
+
+- type: latheRecipe
+  parent: MechanizedBorgLimbRecipe
+  id: MechanizedLeftArmBorg
+  result: MechanizedLeftArmBorg
+
+- type: latheRecipe
+  parent: MechanizedBorgLimbRecipe
+  id: MechanizedRightArmBorg
+  result: MechanizedRightArmBorg
+
+- type: latheRecipe
+  parent: MechanizedBorgLimbRecipe
+  id: MechanizedLeftLegBorg
+  result: MechanizedLeftLegBorg
+
+- type: latheRecipe
+  parent: MechanizedBorgLimbRecipe
+  id: MechanizedRightLegBorg
+  result: MechanizedRightLegBorg
+
+- type: latheRecipe
+  parent: MechanizedBorgLimbRecipe
+  id: MechanizedTorsoBorg
+  result: MechanizedTorsoBorg
+
+- type: latheRecipe
+  parent: MechanizedBorgLimbRecipe
+  id: MechanizedHeadBorg
+  result: MechanizedHeadBorg
+
 
 # Brains
 - type: latheRecipe

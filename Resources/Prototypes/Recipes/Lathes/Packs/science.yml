@@ -133,6 +133,9 @@
   - HonkerTargetingElectronics
   - HamtrCentralElectronics
   - HamtrPeripheralsElectronics
+  # Mechanized parts REFUSE to work in their own latheRecipePack. This works for some reason
+  - MechanizedCentralElectronics #DeltaV
+  - MechanizedPeripheralsElectronics #DeltaV
 
 - type: latheRecipePack
   id: ShuttleBoards

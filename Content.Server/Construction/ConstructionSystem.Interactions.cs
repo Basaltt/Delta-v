@@ -415,15 +415,22 @@ namespace Content.Server.Construction
                     return HandleResult.False;
                 }
 
-                case PartAssemblyConstructionGraphStep partAssemblyStep:
+                
+                case PartAssemblyConstructionGraphStep partAssemblyStep: 
                 {
                     if (ev is not PartAssemblyPartInsertedEvent)
-                        break;
+                    break;
 
-                    if (partAssemblyStep.Condition(uid, EntityManager))
-                        return HandleResult.True;
-                    return HandleResult.False;
+                    //VIBECODED DEBUG HOTFIX! FIX LATER!!
+                    var ok = partAssemblyStep.Condition(uid, EntityManager);
+
+                    // Validation pass must never return True, only Validated/False
+                    if (validation)
+                    return ok ? HandleResult.Validated : HandleResult.False;
+
+                    return ok ? HandleResult.True : HandleResult.False;
                 }
+
 
                 #endregion
                 // --- CONSTRUCTION STEP EVENT HANDLING FINISH ---

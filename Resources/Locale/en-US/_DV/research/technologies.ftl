@@ -31,3 +31,4 @@ research-technology-incendiary-laser-weapons = Incendiary Laser Weapons
 research-technology-security-eva = EVA Armored Suits
 research-technology-salvage-eva = EVA Xeno-fighting Suits
 research-technology-offensive-psionic-prosthetics = Offensive Psionic Prosthetics
+research-technology-mechanized-cyborgs = Mechanized Cyborgs

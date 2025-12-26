@@ -181,6 +181,8 @@
         children:
         - id: RipleyCentralElectronics
         - id: RipleyPeripheralsElectronics
+        - id: MechanizedCentralElectronics
+        - id: MechanizedPeripheralsElectronics
         - id: HamtrCentralElectronics
         - id: HamtrPeripheralsElectronics
         - id: HonkerCentralElectronics

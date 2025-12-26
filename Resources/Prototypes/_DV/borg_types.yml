@@ -73,12 +73,12 @@
   petFailureString: petting-failure-security-cyborg
 
 
-# Protector borg
+# Guardian borg
 - type: borgType
-  id: protector
+  id: guardian
 
   # Description
-  dummyPrototype: MechanizedBorgChassisProtector
+  dummyPrototype: MechanizedBorgChassisGuardian
 
   # Functional
   extraModuleCount: 2
@@ -92,7 +92,7 @@
   - BorgModuleSecurityDeescalate
   - BorgModuleSecurityPatrol
 
-  lawset: SiliconProtector
+  lawset: SiliconGuardian
   job: SecurityOfficer
 
   addComponents:
@@ -145,5 +145,118 @@
   spriteToggleLightState: security_l
 
   # Pet
-  petSuccessString: petting-success-protector-cyborg
-  petFailureString: petting-failure-protector-cyborg
+  petSuccessString: petting-success-mechanized-cyborg
+  petFailureString: petting-failure-mechanized-cyborg
+
+
+# Savior borg
+- type: borgType
+  id: savior
+
+  # Description
+  dummyPrototype: MechanizedBorgChassisSavior
+
+  # Functional
+  extraModuleCount: 3
+  moduleWhitelist:
+    tags:
+    - BorgModuleGeneric
+    - BorgModuleMedical
+
+  defaultModules:
+  - BorgModuleTool
+  - BorgModuleChemical
+  - BorgModuleTopicals
+  - BorgModuleRescue
+
+  radioChannels:
+  - Science
+  - Medical
+  - Command
+
+  lawset: SiliconSavior # DeltaV: Custom lawset
+  job: MedicalDoctor # DeltaV - borg job requirements
+
+  addComponents:
+  - type: SolutionScanner
+  - type: ShowHealthBars
+    damageContainers:
+    - Biological
+    - BiologicalMetaphysical # DeltaV - Kitsune
+  - type: ShowHealthIcons
+    damageContainers:
+    - Biological
+    - BiologicalMetaphysical # DeltaV - Kitsune
+  - type: FabricateCandy # DeltaV - The medical cyborg can generate candies filled with medicine.
+    actions:
+    - ActionFabricateLollipop
+    - ActionFabricateGumball
+  - type: Fiber # DeltaV - white plasteel fibers
+    fiberMaterial: fibers-plasteel
+    fiberColor: fibers-white
+  - type: AccessReader # DeltaV - departmental access
+    access: [["Command"], ["Robotics"], ["Medical"]]
+  - type: SurgeryTarget # Shitmed
+  - type: Sanitized # Shitmed
+
+  # Visual
+  inventoryTemplateId: borgDutch
+  spriteBodyState: medical
+  spriteBodyMovementState: medical_moving
+  spriteHasMindState: medical_e
+  spriteNoMindState: medical_e_r
+  spriteToggleLightState: medical_l
+
+  # Pet
+  petSuccessString: petting-success-mechanized-cyborg
+  petFailureString: petting-failure-mechanized-cyborg
+
+  # Sounds
+  footstepCollection:
+    collection: FootstepHoverBorg
+
+
+# Architect Borg
+- type: borgType
+  id: architect
+
+  # Description
+  dummyPrototype: MechanizedBorgChassisArchitect
+
+  # Functional
+  extraModuleCount: 3
+  moduleWhitelist:
+    tags:
+    - BorgModuleGeneric
+    - BorgModuleEngineering
+
+  defaultModules:
+  - BorgModuleTool
+  - BorgModuleConstruction
+  - BorgModuleRCD
+  - BorgModuleCable
+
+  lawset: SiliconArchitect
+  job: StationEngineer # DeltaV - borg job requirements
+  addComponents: # DeltaV - fibers, departmental access
+  - type: AccessReader
+    access: [["Command"], ["Robotics"], ["Engineering"]]
+  - type: Fiber
+    fiberMaterial: fibers-plasteel
+    fiberColor: fibers-orange
+
+  radioChannels:
+  - Engineering
+  - Science
+  - Command
+
+  # Visual
+  inventoryTemplateId: borgShort
+  spriteBodyState: engineer
+  spriteHasMindState: engineer_e
+  spriteNoMindState: engineer_e_r
+  spriteToggleLightState: engineer_l
+
+  # Pet
+  petSuccessString: petting-success-mechanized-cyborg
+  petFailureString: petting-failure-mechanized-cyborg

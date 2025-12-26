@@ -115,3 +115,13 @@
   parent: HamtrCentralElectronics
   id: HamtrPeripheralsElectronics
   result: HamtrPeripheralsElectronics
+
+- type: latheRecipe
+  parent: [ BaseGoldCircuitboardRecipe, BaseMechRecipeCategory ]
+  id: MechanizedCentralElectronics
+  result: MechanizedCentralElectronics
+
+- type: latheRecipe
+  parent: MechanizedCentralElectronics
+  id: MechanizedPeripheralsElectronics
+  result: MechanizedPeripheralsElectronics

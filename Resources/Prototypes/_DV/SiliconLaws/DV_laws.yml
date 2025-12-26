@@ -1,0 +1,143 @@
+#Security Borg
+- type: siliconLaw
+  id: SiliconPolice1
+  order: 1
+  lawString: law-silicon-police-1
+
+- type: siliconLaw
+  id: SiliconPolice2
+  order: 2
+  lawString: law-silicon-police-2
+
+- type: siliconLaw
+  id: SiliconPolice3
+  order: 3
+  lawString: law-silicon-police-3
+
+- type: siliconLaw
+  id: SiliconPolice4
+  order: 4
+  lawString: law-silicon-police-4
+
+- type: siliconLaw
+  id: SiliconPolice5
+  order: 5
+  lawString: law-silicon-police-5
+
+- type: siliconLawset
+  id: SiliconPolice
+  laws:
+  - SiliconPolice1
+  - SiliconPolice2
+  - SiliconPolice3
+  - SiliconPolice4
+  - SiliconPolice5
+  obeysTo: laws-owner-crew
+
+#Mechanized Guardian
+- type: siliconLaw
+  id: Guardian1
+  order: 1
+  lawString: law-silicon-guardian-1
+
+- type: siliconLaw
+  id: Guardian2
+  order: 2
+  lawString: law-silicon-guardian-2
+
+- type: siliconLaw
+  id: Guardian3
+  order: 3
+  lawString: law-silicon-guardian-3
+
+- type: siliconLaw
+  id: Guardian4
+  order: 4
+  lawString: law-silicon-guardian-4
+
+- type: siliconLaw
+  id: Guardian5
+  order: 5
+  lawString: law-silicon-guardian-5
+
+- type: siliconLawset
+  id: SiliconGuardian
+  laws:
+  - Guardian1
+  - Guardian2
+  - Guardian3
+  - Guardian4
+  - Guardian5
+  obeysTo: laws-owner-crew
+
+  #Mechanized Savior
+- type: siliconLaw
+  id: Savior1
+  order: 1
+  lawString: law-silicon-savior-1
+
+- type: siliconLaw
+  id: Savior2
+  order: 2
+  lawString: law-silicon-savior-2
+
+- type: siliconLaw
+  id: Savior3
+  order: 3
+  lawString: law-silicon-savior-3
+
+- type: siliconLaw
+  id: Savior4
+  order: 4
+  lawString: law-silicon-savior-4
+
+- type: siliconLaw
+  id: Savior5
+  order: 5
+  lawString: law-silicon-savior-5
+
+- type: siliconLawset
+  id: SiliconSavior
+  laws:
+  - Savior1
+  - Savior2
+  - Savior3
+  - Savior4
+  - Savior5
+  obeysTo: laws-owner-crew
+
+#Mechanized Architect
+- type: siliconLaw
+  id: Architect1
+  order: 1
+  lawString: law-silicon-architect-1
+
+- type: siliconLaw
+  id: Architect2
+  order: 2
+  lawString: law-silicon-architect-2
+
+- type: siliconLaw
+  id: Architect3
+  order: 3
+  lawString: law-silicon-architect-3
+
+- type: siliconLaw
+  id: Architect4
+  order: 4
+  lawString: law-silicon-architect-4
+
+- type: siliconLaw
+  id: Architect5
+  order: 5
+  lawString: law-silicon-architect-5
+
+- type: siliconLawset
+  id: SiliconArchitect
+  laws:
+  - Architect1
+  - Architect2
+  - Architect3
+  - Architect4
+  - Architect5
+  obeysTo: laws-owner-station

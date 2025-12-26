@@ -935,6 +935,36 @@
   id: Meat
 
 - type: Tag
+  id: MechanizedPeripheralsControlModule
+
+- type: Tag
+  id: MechanizedCentralControlModule
+
+- type: Tag
+  id: MechanizedBorgArm
+
+- type: Tag
+  id: MechanizedBorgLeg
+
+- type: Tag
+  id: MechanizedLeftArmBorg
+
+- type: Tag
+  id: MechanizedLeftLegBorg
+
+- type: Tag
+  id: MechanizedRightLegBorg
+
+- type: Tag
+  id: MechanizedRightArmBorg
+
+- type: Tag
+  id: MechanizedTorsoBorg
+
+- type: Tag
+  id: MechanizedHeadBorg
+
+- type: Tag
   id: Medal
 
 - type: Tag

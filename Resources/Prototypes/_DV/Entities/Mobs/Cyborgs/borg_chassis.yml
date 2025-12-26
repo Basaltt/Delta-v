@@ -7,9 +7,25 @@
     selectedBorgType: security
 
 - type: entity
-  id: MechanizedBorgChassisProtector
+  id: MechanizedBorgChassisGuardian
   parent: MechanizedBorgChassisSelectable
-  name: protector cyborg
+  name: guardian cyborg
   components:
   - type: BorgSwitchableType
-    selectedBorgType: protector
+    selectedBorgType: guardian
+
+- type: entity
+  id: MechanizedBorgChassisSavior
+  parent: MechanizedBorgChassisSelectable
+  name: savior cyborg
+  components:
+  - type: BorgSwitchableType
+    selectedBorgType: savior
+
+- type: entity
+  id: MechanizedBorgChassisArchitect
+  parent: MechanizedBorgChassisSelectable
+  name: architect cyborg
+  components:
+  - type: BorgSwitchableType
+    selectedBorgType: architect

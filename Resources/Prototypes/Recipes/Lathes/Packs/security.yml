@@ -157,3 +157,11 @@
   recipes:
   - WeaponDisabler
   - WeaponDisablerSMG
+
+#- type: latheRecipePack
+#  id: MechanizedCyborgsModules
+#  recipes:
+  #- MechanizedBeamCannonModule
+  #- MechanizedImmolaterCannonModule
+  #- MechanizedLaserCannonModule
+  #- MechanizedDisablerSMGModule

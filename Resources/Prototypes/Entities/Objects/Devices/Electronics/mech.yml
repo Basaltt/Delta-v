@@ -121,3 +121,40 @@
     - type: GuideHelp
       guides:
       - Robotics
+
+#MECHANIZED CYBORGS
+#Delta-v mechanized cyborgs modules used to make harder better faster poggers mechs
+
+- type: entity
+  id: MechanizedCentralElectronics
+  parent: BaseElectronics
+  name: mechanized central control module
+  description: The electrical control center for all mechanized cyborgs.
+  components:
+    - type: Item
+      storedRotation: 0
+    - type: Sprite
+      sprite: Objects/Misc/module.rsi
+      state: mainboard
+    - type: Tag
+      tags:
+      - MechanizedCentralControlModule
+    - type: GuideHelp
+      guides:
+      - Robotics
+
+- type: entity
+  id: MechanizedPeripheralsElectronics
+  parent: BaseElectronics
+  name: mechanized peripherals control module
+  description: The electrical peripherals control for mechanized cyborgs.
+  components:
+    - type: Sprite
+      sprite: Objects/Misc/module.rsi
+      state: id_mod
+    - type: Tag
+      tags:
+      - MechanizedPeripheralsControlModule
+    - type: GuideHelp
+      guides:
+      - Robotics
